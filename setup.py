@@ -16,7 +16,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
    
 __version__ = "0.0.2"
 REPO_NAME = "mongodbconnectorpkg"
-PKG_NAME= "mongodbconnect"
+PKG_NAME= "mongodbconnecterpkg"
 AUTHOR_USER_NAME = "ParthSoni-CS"
 AUTHOR_EMAIL = "parthsoni08072000@gmail.com"
 setup(
