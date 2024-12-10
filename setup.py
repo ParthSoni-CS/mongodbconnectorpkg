@@ -14,9 +14,9 @@ def get_requiremet(file_path:str)->List[str]:
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()     
    
-__version__ = "0.0.4"
+__version__ = "0.0.2"
 REPO_NAME = "mongodbconnectorpkg"
-PKG_NAME= "Mongo-Connect"
+PKG_NAME= "mongodbconnect"
 AUTHOR_USER_NAME = "ParthSoni-CS"
 AUTHOR_EMAIL = "parthsoni08072000@gmail.com"
 setup(
@@ -32,6 +32,5 @@ setup(
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
-    packages=find_packages(where="src"),
-    install_requires=get_requiremet("./requirements_dev.txt"),
+    packages=find_packages(where="src")
 )
